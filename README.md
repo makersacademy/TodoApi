@@ -15,8 +15,8 @@ TodoApi is a web service created in .NET Core 2.1, PostgreSQL 10 &amp; Visual St
    ```$ git clone git@github.com:lindseydew/TodoApi.git```
 5. Open folder TodoApi in your VSCode editor
 6. Install postgres (if you haven't got it already) with 
-    ```$brew install postgresql``` and start with
-    ```$brew services start postgresql```
+        ```$brew install postgresql``` and start with
+        ```$brew services start postgresql```
 7. Run the sql migration scripts with:
     dotnet ef database update    
 8. Run your server with: 
