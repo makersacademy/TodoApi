@@ -11,8 +11,8 @@ TodoApi is a web service created in .NET Core 2.1, PostgreSQL 10 &amp; Visual St
   * C# Extensions
   * C# XML Documentation Comments
   * Code Runner
-4. Clone this repo with: 
-    $ git clone git@github.com:lindseydew/TodoApi.git
+4. Clone this repo with:
+   ```$ git clone git@github.com:lindseydew/TodoApi.git```
 5. Open folder TodoApi in your VSCode editor
 6. Install postgres (if you haven't got it already) with 
     $brew install postgresql and start with
