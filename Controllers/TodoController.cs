@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 using TodoApi.Models;
+using System;
 
 namespace TodoApi.Controllers
 {
@@ -22,13 +23,18 @@ namespace TodoApi.Controllers
             }
         }
 
+        // create a form which posts to an endpoint on the server - done
+        // send a name attribute from the form to the server - done
+        // persist a new todo item to the database 
+
+            // /api/todo
         [HttpGet]
         public ActionResult<string> GetAll()
         {
             var items = _context.TodoItems.ToList();
             return View(items);
         }
-
+         // /api/todo/<id>
         [HttpGet("{id}", Name = "GetTodo")]
         public ActionResult<TodoItem> GetById(long id)
         {
@@ -38,6 +44,14 @@ namespace TodoApi.Controllers
                 return NotFound();
             }
             return item;
+        }
+        // /api/todo
+        [HttpPost]
+        public ActionResult<string> NewToDoItem([FromForm] string name)
+        {
+            _context.TodoItems.Add(new TodoItem { Name = name });
+            _context.SaveChanges();
+            return Redirect("/api/todo");
         }
     }
 }
