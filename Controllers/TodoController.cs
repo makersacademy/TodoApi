@@ -7,7 +7,7 @@ namespace TodoApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TodoController : ControllerBase
+    public class TodoController : Controller
     {
         private readonly TodoContext _context;
 
@@ -23,9 +23,10 @@ namespace TodoApi.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<TodoItem>> GetAll()
+        public ActionResult<string> GetAll()
         {
-            return _context.TodoItems.ToList();
+            var items = _context.TodoItems.ToList();
+            return View(items);
         }
 
         [HttpGet("{id}", Name = "GetTodo")]
