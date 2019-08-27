@@ -4,6 +4,7 @@
     <thead>
         <th>Name</th>
         <th>Is Complete</th>
+        <th>Created At</th>
     </thead>
     @for(int i =0; i < Model.Count; i++) {
         <tr>
@@ -12,6 +13,9 @@
             </td>
             <td>
                 @Model[i].IsComplete
+            </td>
+            <td>
+                @Model[i].CreatedAt
             </td>
         </tr>
     }
