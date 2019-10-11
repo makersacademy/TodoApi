@@ -3,7 +3,7 @@ TodoApi is a web service created in .NET Core 2.1, PostgreSQL 10 &amp; Visual St
 
 ### Set up
 
-1. Get the [Mac C# SDK](https://www.microsoft.com/net/download)
+1. Get the [Mac C# SDK version 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1) installer
     (verify this by executing `$ dotnet` on your terminal - you should see output text)
 2. Get [Visual Studio](https://visualstudio.microsoft.com/)
 3. Clone this repo with: 
