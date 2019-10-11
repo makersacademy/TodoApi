@@ -12,9 +12,11 @@ TodoApi is a web service created in .NET Core 2.1, PostgreSQL 10 &amp; Visual St
 5. Install postgres (if you haven't got it already) with 
     `$ brew install postgresql` and start with
     `$ brew services start postgresql`
-6. Run the sql migration scripts with:
+6. Install Entity Framework
+    `$ dotnet tool install --global dotnet-ef`
+7. Run the sql migration scripts with:
     `$ dotnet ef database update`    
-7. Run your server with: 
+8. Run your server with: 
    `$ dotnet watch run`
     (verify this by hitting https://localhost:5001/api/todo)
     
