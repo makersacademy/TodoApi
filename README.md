@@ -19,9 +19,10 @@ TodoApi is a web service created in .NET Core 2.1, PostgreSQL 10 &amp; Visual St
     
 ### Skills Checklist
 
-- [ ] I can understand how data is sent from the browser and returned from the server
-- [ ] I can render a c sharp template view
-- [ ] I can post new items from a template and persist this to a database
+- [ ] I can explain or diagram how data is sent from the browser and returned from the server
+- [ ] I can make the application render a c sharp template view
+- [ ] I can post create a form that posts data to the server
+- [ ] I can use the form to create new DB entries
 - [ ] I can add new fields to the model and database
 
 #### Resources
@@ -36,9 +37,6 @@ In the `makers-video` please look at:
 
 https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code
 
+### Pivoting to Acebook
 
-
-
-
-
-
+Ask your coach about this, once you have can tick off everything in the Skills Checklist.
