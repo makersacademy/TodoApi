@@ -24,6 +24,7 @@ TodoApi is a web service created in .NET Core 2.1, PostgreSQL 10 &amp; Visual St
 - [ ] I can post create a form that posts data to the server
 - [ ] I can use the form to create new DB entries
 - [ ] I can add new fields to the model and database
+- [ ] I can add automated tests
 
 #### Resources
 
