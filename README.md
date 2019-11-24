@@ -3,20 +3,19 @@ TodoApi is a web service created in .NET Core 2.1, PostgreSQL 10 &amp; Visual St
 
 ### Set up
 
-1. Get the [Mac C# SDK](https://www.microsoft.com/net/download)
-    (verify this by executing `$ dotnet` on your terminal - you should see output text)
-2. Get [Visual Studio](https://visualstudio.microsoft.com/)
-3. Clone this repo with: 
-    `$ git clone git@github.com:makersacademy/TodoApi.git`
-4. Open folder TodoApi in your Visual Studio editor, and double click on `TodoApi.csproj`
-5. Install postgres (if you haven't got it already) with 
-    `$ brew install postgresql` and start with
-    `$ brew services start postgresql`
-6. Run the sql migration scripts with:
-    `$ dotnet ef database update`    
-7. Run your server with: 
-   `$ dotnet watch run`
-    (verify this by hitting https://localhost:5001/api/todo)
+1. Get the [Mac C# SDK version 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1)
+    - At the time of writing, the newest version of the Mac SDK was 3.0, but there were some compatibility issues with the dotnet entity framework
+    - If you're feeling brave, give the latest version a try (but don't spend more than 30 mins on it)
+2. Verify that you have insalled the SDK by executing `$ dotnet` in your terminal - you should see some output text
+3. Get [Visual Studio](https://visualstudio.microsoft.com/)
+4. Clone this repo with `$ git clone git@github.com:makersacademy/TodoApi.git`
+5. Open folder TodoApi in your Visual Studio editor, and double click on `TodoApi.csproj`
+6. Install postgres (if you haven't got it already) with `$ brew install postgresql`
+7. Then start postgres with `$ brew services start postgresql`
+8. Create your DB with `createdb TodoList`
+9. Run the sql migration scripts with `$ dotnet ef database update`    
+10. Run your server with `$ dotnet watch run`
+11. Verify that your server is running by hitting https://localhost:5001/api/todo) - you should see some JSON
     
 ### Skills Checklist
 
