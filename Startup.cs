@@ -11,9 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
-using TodoApi.Models;
+using AcebookApi.Models;
 
-namespace TodoApi
+namespace AcebookApi
 {
     public class Startup
     {
@@ -28,7 +28,7 @@ namespace TodoApi
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddDbContext<TodoContext>(options =>
+            services.AddDbContext<PostContext>(options =>
             options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

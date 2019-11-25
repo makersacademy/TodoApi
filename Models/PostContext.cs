@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-namespace TodoApi.Models
+namespace AcebookApi.Models
 {
-    public class TodoContext : DbContext
+    public class PostContext : DbContext
     {
-        public TodoContext(DbContextOptions<TodoContext> options) : base(options)
+        public PostContext(DbContextOptions<PostContext> options) : base(options)
         {
         }
-        public DbSet<TodoItem> TodoItems { get; set; }
+        public DbSet<Post> Posts { get; set; }
 
         // protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
         // {
