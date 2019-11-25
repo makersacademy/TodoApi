@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
-using TodoApi.Models;
+using AcebookApi.Models;
 
-namespace TodoApi.Controllers
+namespace AcebookApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -28,7 +28,7 @@ namespace TodoApi.Controllers
             return _context.Posts.ToList();
         }
 
-        [HttpGet("{id}", Name = "GetTodo")]
+        [HttpGet("{id}", Name = "GetPost")]
         public ActionResult<Post> GetById(long id)
         {
             var item = _context.Posts.Find(id);

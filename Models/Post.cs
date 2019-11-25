@@ -1,4 +1,4 @@
-namespace TodoApi.Models
+namespace AcebookApi.Models
 {
     public class Post
     {

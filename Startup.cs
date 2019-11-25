@@ -11,9 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
-using TodoApi.Models;
+using AcebookApi.Models;
 
-namespace TodoApi
+namespace AcebookApi
 {
     public class Startup
     {
